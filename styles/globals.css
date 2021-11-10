@@ -8,6 +8,7 @@
   }
 
   .inputIcon {
-    @apply flex space-x-1 items-center hover:bg-gray-100 flex-grow justify-center p-2 rounded-xl cursor-pointer;
+    @apply flex space-x-1 items-center hover:bg-indigo-100 flex-grow justify-center p-2 rounded-xl cursor-pointer;
+    
   }
 }

@@ -1,31 +1,37 @@
 import {
-  ChevronDownIcon,
-  ShoppingBagIcon,
+  LogoutIcon,
+  HeartIcon,
   UserGroupIcon,
 } from "@heroicons/react/outline";
 import {
-  CalendarIcon,
-  ClockIcon,
-  DesktopComputerIcon,
-  UsersIcon,
+  GlobeIcon,
+  MoonIcon,
+  PhotographIcon,
+  ViewGridIcon,
 } from "@heroicons/react/solid";
 import { useSession } from "next-auth/client";
 import React from "react";
 import SidebarRow from "./SidebarRow";
+import { signOut} from "next-auth/client";
+
+
 
 function Sidebar() {
   const [session, loading] = useSession();
 
   return (
-    <div className="p-2 mt-5 max-w-[600px] xl:min-w-[300px]">
+    <div className="p-2 mt-10 max-w-[600px] xl:min-w-[300px]">
       <SidebarRow src={session.user.image} title={session.user.name} />
-      <SidebarRow Icon={UsersIcon} title="Friends" />
-      <SidebarRow Icon={UserGroupIcon} title="Groups" />
-      <SidebarRow Icon={ShoppingBagIcon} title="Marketplace" />
-      <SidebarRow Icon={DesktopComputerIcon} title="Watch" />
-      <SidebarRow Icon={CalendarIcon} title="Events" />
-      <SidebarRow Icon={ClockIcon} title="Memories" />
-      <SidebarRow Icon={ChevronDownIcon} title="See More" />
+      <SidebarRow Icon={ ViewGridIcon} title="Home" />
+      <SidebarRow Icon={GlobeIcon} title="Destinations" />
+      <SidebarRow Icon={HeartIcon} title="Liked posts" />
+      <SidebarRow Icon={PhotographIcon} title="Your Posts" />
+      <SidebarRow Icon={UserGroupIcon} title="followers" />
+      <SidebarRow Icon={MoonIcon} title="Dark Mode" />
+      <div   onClick={() => signOut()} >
+          <SidebarRow Icon={LogoutIcon} title="Log out" />
+
+          </div>
     </div>
   );
 }

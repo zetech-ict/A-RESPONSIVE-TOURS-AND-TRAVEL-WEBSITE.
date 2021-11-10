@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Login() {
   return (
-    <div className="grid place-items-center">
+    <div className=" flex flex-col items-center justify-center">
       <Image
         src="https://links.papareact.com/t4i"
         height={400}

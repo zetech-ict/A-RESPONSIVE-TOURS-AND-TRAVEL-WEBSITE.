@@ -1,30 +1,31 @@
+import Head from 'next/head'
 import { getSession } from "next-auth/client";
-import Head from "next/head";
-import Feed from "../components/Feed";
-import Header from "../components/Header";
-import Login from "../components/Login";
-import Sidebar from "../components/Sidebar";
-import Widgets from "../components/Widgets";
+
+import Header from '../components/Header'
+import Login from '../components/Login';
+import Sidebar from '../components/Sidebar';
+import Feed from '../components/Feed';
 import { db } from "../firebase";
-
-export default function Home({ session, posts }) {
+export default function Home({ session, posts}) {
   if (!session) return <Login />;
-
   return (
-    <div className="h-screen bg-gray-100 overflow-hidden">
+    <div className=" min-h-screen py-2 bg-indigo-500">
+
       <Head>
-        <title>Facebook</title>
+        <title>AfriSafari</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+<Header />
+ 
+ <main className="flex">
 
-      <main className="flex">
-        <Sidebar />
-        <Feed posts={posts} />
-        <Widgets />
-      </main>
-    </div>
-  );
+<Sidebar />
+<Feed posts={posts} />
+ </main>
+
+ </div>
+  )
 }
 
 export async function getServerSideProps(context) {

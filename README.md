@@ -1,34 +1,95 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TOURS & TRAVEL WEBSITE
 
-## Getting Started
+A RESPONSIVE TRAVEL AND TOURS WEBSITE WHERE TOURISTS CAN SHARE THEIR PLEASURABLE EXPERIENCES
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- [Table of Contents](#table-of-contents)
+- [Problem Statement](#problem-statement)
+- [Objectives](#objectives)
+- [Users](#users)
+- [Technologies](#technologies)
+- [Contributing Guide](#contributing-guide)
+- [REQUIREMENTS SPECIFICATION](#requirements-specification)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  - [Technical Requirements](#technical-requirements)
+  - [Non-functional requirements](#non-functional-requirements)
+  - [Functional Requirements](#functional-requirements)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- [Software Design Description](#software-design-description)
+  - [User Interface Design](#user-interface-design)
+    - [Dashboard](#dashboard)
+    - [Login Page](#login-page)
+    - [Registration Page](#registration-page)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Problem Statement
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Owing to the fact that many people have started embracing safaris we lack a platform where they can share their experiences with others who might be into travel and safaris. Other social media are not customized for specific postings hence not specific for safari and travel experiences.Kenya is a country where in a few days holiday, you can enjoy a lot .The problem is that we although having many websites that offer different kind of services ,The customers are enjoying a lot but there is a platform to share their experiences and reviews about a specific place and services offered.
+Tourism being one of the biggest revenue generators in Kenya in its so unfortunate that we don't have a place where people can socialize on matters travel and safaris.We only have websites of tour companies that only advocate for their businesses therefore making room for bias review of services and experience.
 
-## Learn More
+## Objectives
 
-To learn more about Next.js, take a look at the following resources:
+1. To develop a responsive layout that works on both mobile and big screens.
+2. To create Database where peoples postings and peoples opinions will be stored
+3. To develop account creation module where people can create accounts and share their experiences.
+4. To develop a review functionality where people can rate specific places and services using stars.
+5. To develop a news section where news and new trends will be posted.
+6. To create a verification module where verified reviews will be highlighted.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Users
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Tourist(lacal & international)
+2. Hotels
+3. Tour Guides
 
-## Deploy on Vercel
+## Technologies
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Javascript - React, NEXT
+- CSS- Tailwind(CSS framework)
+- HTML
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contributing Guide
+
+To contribute to this project follow the steps below.
+
+1. Fork this repository to your account.
+2. clone the repository to your local machine.
+3. Create a branch with the name of feature you want to add or a issue you want to fix.
+4. Add the feature and push to github.
+5. Create a pull request with the develop branch.
+
+## REQUIREMENTS SPECIFICATION
+
+### Technical Requirements
+
+- Authentication and authorization
+- Information security
+- Performance
+- Privacy
+
+### Non-functional requirements
+
+- Data should be encrypted.
+- The system should be light weight for ease of access and should within two seconds.
+- Should be responsive to diffent screen sizes.
+
+### Functional Requirements
+
+#### Users Module
+
+- Google Authentication
+- verify email
+
+#### Registration Page
+
+![Sign up Page](documentation/Register.png)
+
+#### Login Page
+
+The Login Page Design:
+![Login Page](documentation/Login.png)
+
+#### Dashboard
+
+The sign up design:
+![Dashboard](documentation/Dash.png)

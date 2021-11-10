@@ -4,12 +4,13 @@ import firebase from "firebase";
 import "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC6thYpl-4Ee827BonqtE9mfAgvAHKMQfM",
-  authDomain: "facebook-2-6eb19.firebaseapp.com",
-  projectId: "facebook-2-6eb19",
-  storageBucket: "facebook-2-6eb19.appspot.com",
-  messagingSenderId: "148443188484",
-  appId: "1:148443188484:web:d3a2698e685c6264361451",
+  apiKey: "AIzaSyC79UzUbmNDFysnIdQ9ZVVQrQRp3E6pYRg",
+  authDomain: "afrisafari.firebaseapp.com",
+  projectId: "afrisafari",
+  storageBucket: "afrisafari.appspot.com",
+  messagingSenderId: "810577629376",
+  appId: "1:810577629376:web:2c3ea5167f47d047bd5d25",
+  measurementId: "G-J9NZ7E2F14"
 };
 
 const app = !firebase.apps.length
@@ -17,7 +18,6 @@ const app = !firebase.apps.length
   : firebase.app();
 
 const db = app.firestore();
-const auth = app.auth();
 const storage = firebase.storage();
 
-export { auth, db, storage };
+export {db, storage };
