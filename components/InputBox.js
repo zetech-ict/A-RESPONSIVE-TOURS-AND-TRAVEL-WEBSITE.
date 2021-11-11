@@ -1,5 +1,4 @@
-import { EmojiHappyIcon } from "@heroicons/react/outline";
-import { CameraIcon, VideoCameraIcon } from "@heroicons/react/solid";
+import { CameraIcon} from "@heroicons/react/solid";
 import { useSession } from "next-auth/client";
 import { useRef, useState } from "react";
 import { db, storage } from "../firebase";
@@ -111,10 +110,7 @@ function InputBox() {
       </div>
 
       <div className="flex justify-evenly p-3 border-t">
-        <div className="inputIcon">
-          <VideoCameraIcon className="h-7 text-red-500" />
-          <p className="text-xs sm:text-sm xl:text-base">Live Video</p>
-        </div>
+       
 
         <div
           onClick={() => filepickerRef.current.click()}
@@ -130,10 +126,6 @@ function InputBox() {
           />
         </div>
 
-        <div className="inputIcon">
-          <EmojiHappyIcon className="h-7 text-yellow-300" />
-          <p className="text-xs sm:text-sm xl:text-base">Feeling/Activity</p>
-        </div>
       </div>
     </div>
   );
