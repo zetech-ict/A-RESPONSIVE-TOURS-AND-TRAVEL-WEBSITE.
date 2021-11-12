@@ -77,7 +77,7 @@ function InputBox() {
   };
 
   return (
-    <div className="bg-white p-2 rounded-2xl shadow-md text-gray-500 font-medium mt-6">
+    <div className="bg-gray-700 p-2 rounded-2xl shadow-md text-gray-500 font-medium mt-6">
       <div className="flex space-x-4 p-4 items-center">
         <Image
           className="rounded-full"
@@ -88,9 +88,9 @@ function InputBox() {
         />
         <form className="flex flex-1">
           <input
-            className="rounded-full h-12 bg-gray-100 flex-grow px-5 focus:outline-none"
+            className="rounded-full h-12 bg-gray-500 flex-grow px-5 focus:outline-none  text-white  "
             type="text"
-            placeholder={`What's on your mind, ${session.user.name}?`}
+            placeholder={`What's up, ${session.user.name}? `}
             ref={inputRef}
           />
           <button hidden onClick={sendPost}>
@@ -116,7 +116,7 @@ function InputBox() {
           onClick={() => filepickerRef.current.click()}
           className="inputIcon"
         >
-          <CameraIcon className="h-7 text-green-400" />
+          <CameraIcon className="h-7 text-red-500" />
           <p className="text-xs sm:text-sm xl:text-base">Photo/Video</p>
           <input
             onChange={addImageToPost}

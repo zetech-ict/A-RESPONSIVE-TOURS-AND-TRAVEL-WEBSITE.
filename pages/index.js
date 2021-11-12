@@ -9,7 +9,7 @@ import { db } from "../firebase";
 export default function Home({ session, posts}) {
   if (!session) return <Login />;
   return (
-    <div className=" min-h-screen py-2 bg-indigo-500">
+    <div className=" min-h-screen py-2 bg-gray-800 ">
 
       <Head>
         <title>AfriSafari</title>
@@ -22,6 +22,7 @@ export default function Home({ session, posts}) {
 
 <Sidebar />
 <Feed posts={posts} />
+
  </main>
 
  </div>
