@@ -6,6 +6,7 @@ import Login from '../components/Login';
 import Sidebar from '../components/Sidebar';
 import Feed from '../components/Feed';
 import { db } from "../firebase";
+import Widgets from '../components/Widgets';
 export default function Home({ session, posts}) {
   if (!session) return <Login />;
   return (
@@ -16,13 +17,13 @@ export default function Home({ session, posts}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-<Header />
+<Header />n
  
  <main className="flex">
 
 <Sidebar />
 <Feed posts={posts} />
-
+<Widgets />
  </main>
 
  </div>

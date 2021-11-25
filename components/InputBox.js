@@ -88,7 +88,8 @@ function InputBox() {
         />
         <form className="flex flex-1">
           <input
-            className="rounded-full h-12 bg-gray-500 flex-grow px-5 focus:outline-none  text-white  "
+            className="rounded-full h-12 bg-gray-500 flex-grow px-5 focus:outline-none  text-white  w-5
+            0"
             type="text"
             placeholder={`What's up, ${session.user.name}? `}
             ref={inputRef}

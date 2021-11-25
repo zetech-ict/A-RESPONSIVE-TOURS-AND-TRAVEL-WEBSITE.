@@ -22,8 +22,8 @@ function Sidebar() {
   return (
     <div className="p-2 mt-10 max-w-[600px] xl:min-w-[300px]">
 <div className="flex flex-col items-center justify-center mb-4">
-      <SidebarRow src={session.user.image} />
-      <SidebarRow title={session.user.name} />
+       <SidebarRow src={session.user.image} />
+      <SidebarRow title={session.user.name}/>
       <h4 className="text-xs mt-0 text-white"> @{session.user.name}</h4>
 </div >
 <div className="flex flex-col items-center"> 
@@ -34,7 +34,7 @@ function Sidebar() {
       <SidebarRow Icon={PhotographIcon} title="Your Posts" />
       <SidebarRow Icon={UserGroupIcon} title="followers" />
       <SidebarRow Icon={MoonIcon} title="Dark Mode" />
-      <div  className="border-t m-4 border-gray-500" onClick={() => signOut()} >
+      <div  className=" border-gray-500" onClick={() => signOut()} >
           <SidebarRow Icon={LogoutIcon} title="Log out" />
 
           </div>

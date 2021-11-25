@@ -4,7 +4,7 @@ import Image from "next/image";
 function Header() {
     const [session] = useSession();
     return (
-<div className = "flex justify-between pb-3  p-3 items-center h-10 border-b border-gray-400 bg-gray-800 "> 
+<div className = "flex justify-between pb-3  p-3 items-center h-10 border-b border-gray-400 bg-gray-800 sticky"> 
     <div className="flex ml-4">
         <div className="h-8 w-8 bg-purple-300 rounded-lg flex items-center justify-center text-white font-bold"> AS</div>
         <h1 className="text-white lg:text-xl px-2 text-lg font-bold ">AfriSafari</h1>

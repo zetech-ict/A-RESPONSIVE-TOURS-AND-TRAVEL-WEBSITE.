@@ -7,12 +7,12 @@ function Contact({ src, name }) {
         className="rounded-full"
         objectFit="cover"
         src={src}
-        width={50}
-        height={50}
+        width={30}
+        height={30}
         layout="fixed"
       />
       <p>{name}</p>
-      <div className="absolute bottom-2 left-7 bg-green-400 h-3 w-3 rounded-full" />
+      <div className="absolute bottom-2 left-4 bg-green-400 h-2 w-2 rounded-full" />
     </div>
   );
 }
