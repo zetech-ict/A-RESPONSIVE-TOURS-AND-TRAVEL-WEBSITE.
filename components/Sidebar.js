@@ -28,6 +28,7 @@ function Sidebar() {
 </div >
 <div className="flex flex-col items-center"> 
 <div>
+
       <SidebarRow Icon={ ViewGridIcon} title="Home" />
       <SidebarRow Icon={GlobeIcon} title="Destinations" />
       <SidebarRow Icon={HeartIcon} title="Liked posts" />

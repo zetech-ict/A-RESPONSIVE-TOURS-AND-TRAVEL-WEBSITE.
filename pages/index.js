@@ -10,14 +10,14 @@ import Widgets from '../components/Widgets';
 export default function Home({ session, posts}) {
   if (!session) return <Login />;
   return (
-    <div className=" min-h-screen py-2 bg-gray-800 ">
+    <div className=" min-h-screen py-2 bg-gray-800  ">
 
       <Head>
         <title>AfriSafari</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-<Header />n
+<Header />
  
  <main className="flex">
 

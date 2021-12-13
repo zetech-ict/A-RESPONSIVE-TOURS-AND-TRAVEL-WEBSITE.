@@ -31,10 +31,8 @@ Tourism being one of the biggest revenue generators in Kenya in its so unfortuna
 
 1. To develop a responsive layout that works on both mobile and big screens.
 2. To create Database where peoples postings and peoples opinions will be stored
-3. To develop account creation module where people can create accounts and share their experiences.
-4. To develop a review functionality where people can rate specific places and services using stars.
-5. To develop a news section where news and new trends will be posted.
-6. To create a verification module where verified reviews will be highlighted.
+3. To develop account creation module where people can create accounts and share their experiences. uses (next auth facebook authenticaton)
+4. To develop a Log out functionality where users can Log out .
 
 ## Users
 
@@ -92,4 +90,4 @@ The Login Page Design:
 #### Dashboard
 
 The sign up design:
-![Dashboard](documentation/Dash.png)
+![Dashboard](documentation/projectui.png)

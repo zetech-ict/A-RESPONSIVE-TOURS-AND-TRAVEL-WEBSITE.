@@ -3,9 +3,9 @@ import Contact from "./Contact";
 
 function Widgets() {
   const contacts = [
-    { src: "https://links.papareact.com/f0p", name: "Njiru Titus" },
-    { src: "https://links.papareact.com/kxk", name: "Rashid Wario" },
-    { src: "https://links.papareact.com/snf", name: "Tom Crook" },
+    { src: "https://links.papareact.com/d0c", name: "Njiru Titus" },
+    { src: "https://links.papareact.com/d0c", name: "Rashid Wario" },
+    { src: "https://links.papareact.com/r57", name: "Tom Crook" },
     { src: "https://links.papareact.com/d0c", name: "Jay johnson" },
     { src: "https://links.papareact.com/6gg", name: "Ngolo Kante" },
     { src: "https://links.papareact.com/r57", name: "Jaba Limpueza" },
@@ -22,7 +22,7 @@ function Widgets() {
     </div>
 
     <div className="hidden  p-1 mt-20  rounded-xl lg:flex flex-col w-60 text-white mr-10 bg-gray-700 h-96 mt">
-<h4 className="flex items-center justify-center">Online Friends</h4>
+<h4 className="flex items-center justify-center">Featured</h4>
       {contacts.map((contact) => (
         <Contact key={contact.src} src={contact.src} name={contact.name} />
       ))}

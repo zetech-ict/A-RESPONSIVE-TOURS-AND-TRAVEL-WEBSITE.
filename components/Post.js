@@ -28,7 +28,7 @@ function Post({ name, message, email, postImage, image, timestamp }) {
       )}
 
       {/* Post Footer */}
-      <div className="flex justify-between items-center rounded-b-2xl bg-white shadow-md text-gray-400 border-t">
+      {/* <div className="flex justify-between items-center rounded-b-2xl bg-white shadow-md text-gray-400 border-t">
         <div className="inputIcon p-3 rounded-none rounded-bl-2xl">
           <ThumbUpIcon className="h-4" />
           <p className="text-xs sm:text-base">Like</p>
@@ -43,7 +43,7 @@ function Post({ name, message, email, postImage, image, timestamp }) {
           <ShareIcon className="h-4" />
           <p className="text-xs sm:text-base">Share</p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
